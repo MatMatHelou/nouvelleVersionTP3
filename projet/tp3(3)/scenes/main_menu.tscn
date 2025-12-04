@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://belhq6xrhqyi6"]
+[gd_scene load_steps=4 format=3 uid="uid://belhq6xrhqyi6"]
 
+[ext_resource type="Script" uid="uid://cuwph2gev08t4" path="res://scenes/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://bpb8kd1csd1hx" path="res://assets/images/8.png" id="1_ekxnf"]
 [ext_resource type="Texture2D" uid="uid://djrrxheuq2uxy" path="res://assets/images/game_name.png" id="2_bqqt6"]
 
 [node name="main_menu" type="Node"]
+script = ExtResource("1_bqqt6")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 anchors_preset = 15
@@ -59,3 +61,6 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 39
 text = "Level 2
 "
+
+[connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
