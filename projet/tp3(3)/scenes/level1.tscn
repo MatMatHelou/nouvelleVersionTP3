@@ -1381,3 +1381,5 @@ vertical_alignment = 1
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_d3jkd")
 autoplay = true
+
+[node name="Collectiable4" parent="." instance=ExtResource("4_85g3d")]
